@@ -1,4 +1,4 @@
-import Welcome from "./Props/Welcome";
+import Welcome from "./RenderCondizionale/Welcome";
 
 export function App() {
   return (
