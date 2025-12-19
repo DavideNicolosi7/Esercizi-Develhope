@@ -1,9 +1,9 @@
-import Welcome from "./RenderCondizionale/Welcome";
+import Counter from "./useState/Counter";
 
 export function App() {
   return (
     <div>
-      <Welcome name="Davide" age={25} />
+      <Counter />
     </div>
   );
 }
