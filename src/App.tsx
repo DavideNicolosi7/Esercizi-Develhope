@@ -1,4 +1,4 @@
-import Counter from "./useState/Counter";
+import Counter from "./useEffect/Counter";
 
 export function App() {
   return (
