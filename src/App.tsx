@@ -1,9 +1,9 @@
-import Counter from "./useEffect/Counter";
+import MultiButton from "./GestioneEventi/MultiButton";
 
 export function App() {
   return (
     <div>
-      <Counter />
+      <MultiButton />
     </div>
   );
 }
