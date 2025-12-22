@@ -41,7 +41,7 @@ export function MouseClicker({ name = "one" }: MouseProps) {
   );
 }
 
-// con un solo gestore degli eventi nel bottone e passando la proprietà event.currentTarget.name in console verrà stampato il name indipendemente da dove si  clicca all'interno del bottone
-// dopo aver aggiunto il gestore di eventi all'immagine l'attributo name non viene più stampato perchè al gestore eventi dell'immagine passo event.target.src quindi stampa solo l src dell'immagine
+// l'attributo name viene stampato anche quando si clicca sull'immagine perchè tramite il bubblingl'evento si propaga da elemento figlio verso l'elemento padre
+// per impedire che l'attributo name venga stampato anche quando  si clicca sull'imagine è necessario bloccare la propagazione dell'evento tramite event.stopPropagation
 
 export default MouseClicker;
