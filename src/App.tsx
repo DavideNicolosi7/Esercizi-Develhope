@@ -1,6 +1,7 @@
 import InteractiveWelcome from "./FormControllati/InteractiveWelcome";
 import UncontrolledLogin from "./FormIncontrollati/UncontrolledLogin";
 import MultiButton from "./GestioneEventi/MultiButton";
+import TodoList from "./Liste-e-Stato/TodoList";
 import Colors from "./Liste/Colors";
 import FocusableInput from "./useRef/FocusableInput";
 
@@ -15,7 +16,7 @@ const colors = [
 export function App() {
   return (
     <div>
-      <Colors items={colors} />
+      <TodoList />
     </div>
   );
 }
