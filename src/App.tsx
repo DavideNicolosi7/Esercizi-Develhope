@@ -1,3 +1,6 @@
+import { useState } from "react";
+import GithubUser from "./Fetch/GithubUser";
+import GithubUsers from "./Fetch/GithubUsers";
 import InteractiveWelcome from "./FormControllati/InteractiveWelcome";
 import UncontrolledLogin from "./FormIncontrollati/UncontrolledLogin";
 import MultiButton from "./GestioneEventi/MultiButton";
@@ -14,9 +17,11 @@ const colors = [
 ];
 
 export function App() {
+  const [selectedUser, setSelectedUser] = useState("DavideNicolosi7");
   return (
     <div>
-      <TodoList />
+      <GithubUsers onSelectUser={setSelectedUser} />
+      {selectedUser && <GithubUser username={selectedUser} />}
     </div>
   );
 }
