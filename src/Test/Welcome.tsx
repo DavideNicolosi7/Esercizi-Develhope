@@ -1,6 +1,6 @@
 // Scrivi un test per il componente Welcome dell'esercizio props
 
-import Age from "../Props/Age";
+import Age from "./Age";
 
 export type WelcomeProps = {
   name?: string;
