@@ -3,5 +3,5 @@ export type AgeProps = {
 };
 
 export default function Age({ age }: AgeProps) {
-  return <p>Your age is {age}</p>;
+  return <p> Your age is {age}</p>;
 }
